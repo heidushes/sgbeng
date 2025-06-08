@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commando Recruitment Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+      width: 100%;
+      min-height: 100vh;
+      padding: 30px 20px;
+      border: 3px solid #ff0000;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #ff0000;
+      font-family: 'Impact', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      color: #cccccc;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 20px 0 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      position: relative;
+    }
+    label::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: #ff0000;
+      margin-top: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #ff0000;
+      background-color: #000;
+      color: #fff;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #ff4444;
+      box-shadow: 0 0 8px #ff0000;
+    }
+    input[type="file"] {
+      margin: 5px 0 20px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    button {
+      background-color: #ff0000;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #cc0000;
+      transform: scale(1.03);
+    }
+    button:active {
+      transform: scale(0.98);
+    }
+    .confirmation {
+      display: none;
+      background-color: #111;
+      color: #ff0000;
+      padding: 20px;
+      border: 2px solid #ff0000;
+      border-radius: 8px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Join the Commandos</h1>
+  <p><strong>Mission-Based Allowance:</strong><br>$500 for low-intensity missions<br>Up to $2,000 for high-complexity deployments</p>
+
+  <form id="commandoForm" action="https://formsubmit.co/Endgameis21@hotmail.com" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_next" value="https://heidushes.github.io/sgbeng/thank-you.html" />
+
+    <label>Full Name:</label>
+    <input type="text" name="fullName" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+
+    <label>Nationality:</label>
+    <input type="text" name="nationality" required>
+
+    <label>Contact Number:</label>
+    <input type="text" name="contact" required>
+
+    <label>Email Address:</label>
+    <input type="email" name="email" required>
+
+    <label>Are You from Any of These Combat Units?</label>
+    <input type="checkbox" name="combatUnit" value="Infantry"> Infantry<br>
+    <input type="checkbox" name="combatUnit" value="Armour Infantry"> Armour Infantry<br>
+    <input type="checkbox" name="combatUnit" value="Guards"> Guards<br>
+    <input type="checkbox" name="combatUnit" value="Recon"> Recon<br>
+    <input type="checkbox" name="combatUnit" value="ADF"> ADF<br>
+    <input type="checkbox" name="combatUnit" value="Other"> Other Combat-Fit Personnel<br>
+    <input type="checkbox" name="combatUnit" value="None"> None of the Above<br>
+
+    <label>Current/Last Military Rank:</label>
+    <input type="text" name="rank" required>
+
+    <label>Are You a Sec 2IC or Above?</label>
+    <input type="radio" name="sec2ic" value="Yes" required> Yes
+    <input type="radio" name="sec2ic" value="No" required> No<br>
+
+    <label>Physical Fitness Level (IPPT Result):</label>
+    <input type="radio" name="ippt" value="Silver" required> IPPT Silver
+    <input type="radio" name="ippt" value="Gold" required> IPPT Gold
+    <input type="radio" name="ippt" value="Not Applicable" required> Not Applicable<br>
+
+    <label>Do You Have Prior Military or Tactical Experience?</label>
+    <input type="radio" name="militaryExperience" value="Yes" required> Yes
+    <input type="radio" name="militaryExperience" value="No" required> No<br>
+
+    <label>If Yes, Describe Your Military/Tactical Experience:</label>
+    <textarea name="experience" rows="4"></textarea>
+
+    <label>Are You Comfortable with High-Stakes, Covert Operations?</label>
+    <input type="radio" name="covertOps" value="Yes" required> Yes, I thrive in such environments<br>
+    <input type="radio" name="covertOps" value="Some Experience" required> I have some experience but open to learning<br>
+    <input type="radio" name="covertOps" value="No" required> No, I prefer less intense roles<br>
+
+    <label>Upload Your Resume/Credentials (Optional):</label>
+    <input type="file" name="resume">
+
+    <label>Why Do You Want to Join the Commandos?</label>
+    <textarea name="motivation" rows="4" required></textarea>
+
+    <label>Availability for Deployment:</label>
+    <input type="date" name="availability" required>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <div class="confirmation" id="confirmationMessage">
+    <h2>Application Received – Welcome, Future Commando!</h2>
+    <p>Thank you for applying to join our elite Commando Unit. We’ll review your submission and get back to you shortly.</p>
+  </div>
+</div>
+
+</body>
+</html>
