@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Council of Underground - Terms, Privacy &amp; Disclaimer</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    /* Reset Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden; /* Prevents full-page scrolling */
+        padding: 5px 0;
+        border-top: 2px solid #ff0000;
+        border-bottom: 2px solid #ff0000;
+    }
+
+    /* Full-Screen Fixed Container */
+    .terms-container {
+        width: 100%;
+        max-width: 800px;
+        height: 96vh;
+        background: rgba(20, 20, 20, 0.98);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        border: 2px solid rgba(255, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* Scrollable Content */
+    .terms-content {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding-right: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #ff0000 rgba(255, 0, 0, 0.2);
+        line-height: 1.7;
+    }
+
+    .terms-content::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .terms-content::-webkit-scrollbar-thumb {
+        background-color: #ff0000;
+        border-radius: 5px;
+    }
+
+    /* Logo Styling */
+    .logo-container {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .logo-container img {
+        width: 100%;
+        max-width: 90px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+
+    /* Title Styling */
+    h1 {
+        font-size: 22px;
+        color: #ff0000;
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .terms-content h2 {
+        font-size: 18px;
+        color: #ff0000;
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        margin-bottom: 10px;
+    }
+
+    .terms-content p, .terms-content ul {
+        font-size: 14px;
+        color: #bbb;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    /* Golden Neon Link Styling */
+    a {
+        color: #FFD700; /* Gold color */
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+        text-shadow: 0 0 5px #FFD700, 0 0 10px #FFA500, 0 0 20px #FF8C00;
+    }
+
+    a:hover {
+        color: #FFA500; /* Slightly darker gold */
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFA500, 0 0 30px #FF8C00;
+        transform: scale(1.05);
+    }
+
+    /* Allowed & Not Allowed Sections */
+    .rules ul {
+        list-style: none;
+        font-size: 14px;
+        color: #bbb;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .rules ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+
+    .allowed li::before {
+        content: "✔";
+        color: #00ff00;
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    .not-allowed li::before {
+        content: "✖";
+        color: #ff0000;
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    /* Footer with "I Agree" Button */
+    footer {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .agree-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 12px;
+        font-size: 15px;
+        background-color: #ff0000;
+        color: #ffffff;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        role: button;
+    }
+
+    .agree-btn:hover {
+        background-color: #ff4444;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    }
+
+    @media (max-width: 768px) {
+        .terms-content p {
+            font-size: 13px;
+        }
+
+        .logo-container img {
+            max-width: 80px;
+        }
+    }
+</style>
+<meta content="noindex,nofollow" name="robots"/></head>
+<body>
+<div class="terms-container">
+<div class="logo-container">
+<img alt="Council of Underground Logo" src="https://s.tfrbot.com/h/NrQhUP"/>
+</div>
+<h1>Terms &amp; Policies</h1>
+<div class="terms-content">
+<h2>Allowed</h2>
+<ul class="rules allowed">
+<li>Victims of bullying seeking support and justice.</li>
+<li>Low-income individuals looking for financial opportunities.</li>
+<li>Lobbyists, activists, and opposition supporters.</li>
+<li>Individuals raising awareness about social and political issues.</li>
+</ul>
+<h2>Not Allowed</h2>
+<ul class="rules not-allowed">
+<li>Individuals with malicious intent towards the group, admins, or members.</li>
+<li>Government-affiliated individuals or agencies attempting to monitor or disrupt the group.</li>
+<li>Supporters of the People’s Action Party (PAP) as this group does not align with PAP’s policies.</li>
+</ul>
+<h2>Terms of Service</h2>
+<h3>1. Purpose of This Platform</h3>
+<p>The Council of the Underground (“Council,” “we,” “our,” or “us”) operates this platform as a secure hub for discussion, advocacy, education, and organization. This platform is intended for individuals seeking to engage in critical political discourse, raise awareness of socio-political issues, support underrepresented communities, and pursue lawful reform through peaceful and informed means.</p>
+<h3>2. Acceptance of Terms</h3>
+<p>By accessing or using this site, you agree to abide by these Terms of Service. If you do not accept these terms in full, you must discontinue use of this platform immediately.</p>
+<h3>3. Content Responsibility</h3>
+<p>The Council does not guarantee the accuracy, completeness, or timeliness of any content posted by members. All content is submitted by independent users and does not necessarily reflect the views or beliefs of the Council.</p>
+<h3>4. Platform Usage Rules</h3>
+<ul>
+<li>Do not post or promote content that is illegal under Singapore law (e.g. incitement to violence, threats, child exploitation).</li>
+<li>Do not impersonate, harass, or target others.</li>
+<li>Do not share private personal information (doxxing).</li>
+<li>Do not post spam, phishing links, or malware.</li>
+</ul>
+<h3>5. Protection Against Abuse of Authority</h3>
+<p>We reserve the right to reject takedown, access, or censorship requests from government agencies, including but not limited to those filed under POFMA or OCHA, if such requests are deemed by us to:</p>
+<ul>
+<li>Lack due process or judicial oversight</li>
+<li>Be politically motivated or suppress dissenting opinions</li>
+<li>Target truthful content that challenges dominant narratives</li>
+</ul>
+<p>The Council may disclose information only if legally compelled by a valid court order issued by a neutral and competent court of law. All other forms of data or access requests will be rejected unless due process is strictly followed.</p>
+<h3>6. Termination</h3>
+<p>We reserve the right to ban or restrict any user who violates these terms or engages in bad-faith activities against the platform or its members.</p>
+<hr/>
+<h3>7. Recommended Business & Alliance Partners</h3>
+    <p>We collaborate with trusted partners to strengthen our community.</p>
+    <ul>
+        <li> <a href="https://t.me/fastcastagent" target="_blank">@fastcastagent</a></li>
+        <li> <a href="https://t.me/ckintheworld1688" target="_blank">@ckintheworld1688</a></li>
+        <li> <a href="https://t.me/heidushes" target="_blank">@heidushes</a></li>
+    </ul>
+    <p>For alliances, contact: <a href="https://heidushes.github.io/sgbeng/contact-us.html" target="_blank">Task Force Team</a></p>
+    <hr/>
+<h2>Privacy Policy</h2>
+<h3>1. Data Collection</h3>
+<p>We do not actively collect personally identifiable information unless explicitly provided by users for secure communication or authentication. Any such data is stored with maximum encryption standards.</p>
+<h3>2. Zero Disclosure Policy</h3>
+<p>We do not share, sell, rent, or disclose user data to governments, private entities, or third parties — unless compelled by a valid court order under due process of law.</p>
+<h3>3. Anonymity and Security</h3>
+<p>This platform is designed with anonymity and digital safety in mind. We utilize end-to-end encryption where possible and actively monitor for infiltration attempts, digital tracking, or surveillance.</p>
+<h3>4. Cookies and Analytics</h3>
+<p>We do not use invasive tracking, third-party advertising cookies, or behavioral profiling. Any analytics tools are self-hosted and stripped of personally identifiable information.</p>
+<h3>5. Government Requests for Data</h3>
+<p>Any request from Singaporean agencies (e.g. OCHA, POFMA Office, IMDA, Police) will be subjected to independent legal review. We will challenge all requests that do not meet internationally accepted legal and ethical standards.</p>
+<hr/>
+<h2>Disclaimer</h2>
+<h3>1. No Professional Advice</h3>
+<p>All information shared on this platform is for discussion and general knowledge. We do not provide legal, political, financial, or medical advice. Always consult qualified professionals before making any decisions.</p>
+<h3>2. Member-Generated Content</h3>
+<p>Opinions expressed by users are their own. The Council of the Underground does not assume responsibility for third-party content and will not be held liable for any views expressed.</p>
+<h3>3. Freedom of Expression</h3>
+<p>This platform operates under principles of free speech, dignity, and human rights. However, freedom of expression does not include illegal conduct or incitement to harm.</p>
+<h3>4. Legal Jurisdiction</h3>
+<p>This platform is governed by principles of international law and digital sovereignty. We operate in digital space and reject jurisdictional overreach that violates freedom of association, speech, and privacy.</p>
+<hr/>
+<h2>Acknowledgment</h2>
+<p>By accessing this platform, you acknowledge and accept the above Terms of Service, Privacy Policy, and Disclaimer in full. You also affirm your understanding that this site serves as a protected space for critical civic engagement and non-violent political expression.</p>
+
+<footer>
+<button class="agree-btn" id="agreeButton">I Agree</button>
+</footer>
+</div>
+<script>
+    document.getElementById("agreeButton").addEventListener("click", function() {
+        window.location.href = "https://t.me/councilofundergroundnetworks";
+    });
+</script>
+</div></body>
+</html>
